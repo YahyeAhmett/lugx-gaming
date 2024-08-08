@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'poppins',sans-serif;
+    line-height: 1.5;
+}
+
+/* Header*/
+
+.header .container{
+    width: 100%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   /* position: absolute;*/
+    right: 20px;
+    margin-left: 20px;
+    margin-top: 20px;
+    
+}
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 20px;
+    margin: 20px;
+
+}
+.header .container nav .hidebar li{
+    list-style-type: none;
+    margin: 20px;
+}
+/* sidebar*/
+
+.header .container nav .sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: auto;
+    width: 250px;
+    z-index: 999;
+    background-color: rgb(151, 149, 149);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+.sidebar li{
+    background-color: rgb(45, 45, 45);
+    border-bottom: 1px solid white;
+    width: 100%;
+    list-style-type: none;
+    text-align: center;
+    padding-top:5px ;
+}
+.sidebar li a{
+    width: 100%;
+    color: white;
+    font-size: 12px;
+}
+.sidebar li .active{
+    color: rgb(244, 53, 53);
+    background: none;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.sidebar .btn{
+    background: none;
+
+}
+.menu-button{
+    display: none;
+}
+
+a{
+    text-decoration: none;
+    /*color: white;*/
+   /* font-weight: 600;*/
+    cursor: pointer;
+}
+a:hover{
+    color: red;
+}
+ul li .active{
+    background-color: #dcdcdc;
+    border-radius: 15px;
+    padding: 5px 10px;
+}
+/* Button*/
+.btn{
+    background-color: red;
+    color: white;
+    font-weight: 600;
+    padding: 5px 10px;
+    border-radius: 15px;
+    border: none;
+}
+.btn:hover{
+    color: white;
+}
+
+
+
+/* RESPONSIVE DESIGN*/
+@media (max-width:800px){
+    .hideonMobile{
+        display: none;
+
+    }
+    .menu-button{
+        display: block;
+    }
+}
+@media (max-width:400px){
+    .sidebar{
+        width: 100%;
+    }
+
+}
