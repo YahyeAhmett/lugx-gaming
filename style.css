@@ -10,129 +10,120 @@ body{
 
 /* Header*/
 
-.header .container {
+header{
     width: 100%;
-    background: transparent;
+    height: 6rem;
+    position: sticky;
+    background-color:#007cf8;
+     top: 0;
+     z-index: 10000;
+ }
+
+.container{
+    width:min(90%, 1200px);
+    margin-inline: auto;
+ }
+ .logo {
+    width: 110px;
+    height: 42px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    position: absolute;
-    margin-left: 20px;
-    margin-top: 20px;
-    
+    justify-content: center;
+
+ }
+.logo img{
+    width: 100%;
+    height: 100%;
 }
-.container .logo{
-    margin-left: 30px;
+
+
+  .menu{
+  height: 100%;
+  display: flex;
+  justify-content: space-between; 
+  align-items: center; 
+  z-index: 11111;
+
 }
-nav ul{
+ 
+.nav-links{
+    height: 6rem;
     display: flex;
-    justify-content: space-between;
-    margin-right: 20px;
-    margin: 20px;
+    align-items: center;
+    gap: 1.5rem;
+    list-style: none;
+    position: relative;
+   }
+   .nav-links a{
+      color: #fff;
+      text-decoration: none;
+       font-size: 14px;
+       font-weight: 300;
+      padding: 10px 15px;
+      border-radius: 20px;
+      cursor: pointer;
+   }
+   .nav-links a:hover{
+    background-color: rgba(255, 255, 255, 0.10);
+}
+  
+  .main-btn{
+    background-color: #ee626b;
+    border-radius: 20px;
+    padding: 10px 15px;
 
-}
-.header .container nav .hidebar li{
-    list-style-type: none;
-    margin: 20px;
-}
-/* sidebar*/
-
-.header .container nav .sidebar{
-    position: fixed;
-    top: 0;
-    right: 0;
-    height: 50vh;
-    width: 500px;
-    z-index: 999;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
-    margin: 0 40px;
-    margin-top: 20px;
-}
-.sidebar li{
-    background-color:white;
-    border-bottom: 1px solid rgb(34, 34, 34);
-    width: 100%;
-    list-style-type: none;
-    text-align: center;
-    padding: 20px 0 ;
-
-}
-.sidebar li a{
-    width: 100%;
-    color: black;
-    font-size: 14px;
-    font-weight: 600;
-}
-.sidebar li a:hover{
-    color: #ee626b;
-}
-.sidebar li .active{
-    color: #ee626b;
-    background: none;
-    font-weight: 600;
-    text-transform: uppercase;
-}
-.sidebar .btn{
-    background: none;
-
-}
-.menu-button{
+     }
+     a.active{
+        background-color: rgba(255, 255, 255, 0.10);
+     }
+     
+    
+    
+    
+.hamburger{
     display: none;
-}
+   }
 /* header end*/
 
 /*HERO*/
 
 
 .hero{ 
-    background: url("https://templatemo.com/templates/templatemo_589_lugx_gaming/assets/images/banner-bg.jpg");
-    background-position: center bottom;
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 225px 0px;
-    padding-left: 20px;
-    border-radius: 0px 0px 150px 150px; 
-    
+    background: url("https://templatemo.com/templates/templatemo_589_lugx_gaming/assets/images/banner-bg.jpg") no-repeat center/cover;
+    height: calc(900px - 6rem);
+     border-bottom-left-radius: 200px;
+    border-bottom-right-radius: 200px;
 }
 .hero .container{
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding: 125px 0;
 }
 .hero .container .align-one{
-    width:40%;
-}
-.hero .container .small{
-    margin-bottom:10px ;
+    width:50%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
     color: white;
+
 }
+.hero .container .hero-heading{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+ }
 .hero .container .hero-heading .hero-heading-tittle{
-    margin-bottom: 20px;
-    font-size:48px;
+     font-size:48px;
     color: white;
-    position: relative;
-}
-.hero .container h1::after{
-    position: absolute;
-    background-image: url(https://templatemo.com/templates/templatemo_589_lugx_gaming/assets/images/caption-dec.png);
-    width: 202px;
-    height: 12px;
-    content: '';
-    left: 125px;
-    bottom: 0;
-}
+ }
+ 
 .hero .hero-heading p{
     font-size: 14px;
-    margin-bottom: 40px;
-    color: white;
+     color: white;
 }
 form{
-    margin-top: 20vh;
-    position: relative;
+     position: relative;
     width: 70%;
 }
 form input{
@@ -158,30 +149,39 @@ form .btn-prime{
     border: none;
     border-radius: 25px;
     position: absolute;
-    right: -50px;
+    right: -100px;
     top: 0px;
     transition: all 0.3s ease 0s;
 }
 .hero .align-two{
+    width: 300px;
+    height: 400px;
     position: relative;
-}
+ }
 .hero .align-two img{
+    width: 100%;
+    height: 100%;
     border-radius: 20px;
 }
 .hero .align-two .price{
     position: absolute;
-    top: 10px;
+    top: 5px;
     right: 10px;
     background-color:rgb(0, 138, 248);
     color: white;
     font-weight: 600;
-    padding: 5px ;
-    border-radius: 15px;
+    padding: 5px 15px;
+    border-radius: 50px;
 }
 .hero .align-two .discont{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: absolute;
-    left: -25px;
-    bottom: -25px;
+    left: -2px;
+    bottom: -30px;
     background-color: rgb(238, 98, 107);
     color: white;
     font-size: 24px;
@@ -189,47 +189,18 @@ form .btn-prime{
     padding: 15px 0;
     border-radius: 50%;
 }
-a{
-    text-decoration: none;
-    color: white;
-   /* font-weight: 600;*/
-    cursor: pointer;
-    border: transparent;
-    letter-spacing: 0.25px
-}
-a:hover{
-    background-color: rgba(255, 255, 255, 0.10);
-    border-radius: 15px;
-    padding: 10px 10px;
-}
-ul li a.active{
-    background-color: rgba(255, 255, 255, 0.10);
-    border-radius: 15px;
-    padding: 10px 10px;
-}
-/* Button*/
-.btn{
-    background-color: #ee626b;
-    color: white;
-    font-weight: 600;
-    padding: 10px 15px;
-    border-radius: 20px;
-    border: none;
-}
-.btn:hover{
-    color: white;
-}
+
 /* hero-grid*/
 
 .hero-grid{
-   display: grid;
-   grid-template-columns: repeat(4,250px);
-   gap: 2vh;
-   position: absolute;
-   bottom: -50vh;
-   margin-left: 20vh;
-}
+    width: 100%;
+   display: flex;
+   justify-content: center;
+    gap: 1rem;
+    margin-top: -80px;
+  }
 .hero-grid .item{
+    width: 250px;
     background-color: white;
     border-radius: 25px;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
@@ -263,106 +234,123 @@ ul li a.active{
 
 /* RESPONSIVE DESIGN*/
 
+/* Smatphones and TAblets */
 
-
-@media (max-width:992px){
-    .hideonMobile{
-        display: none;
-
-    }
-    .menu-button{
-        display: block;
-    }
-    .header{
-        width: 100%;
-    }
-    .hero .container{
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 20vh;
-        width: 720px;
-        text-align: center;
-    }
-     .align-one .hero-heading ,form {
-        width: 680px;
-        text-align: center;
-    }
+@media (max-width:768px){
     
-    .hero-heading , .align-two{
+    header {
         width: 100%;
-    }
-    .logo  {
-        max-width: 110px;
-    }
-    h1{
-        font-size: 30px;
-    }
- 
-    h1,img{
-        width: 100%;
-        height: auto;
-    }
-
-    .hero .hero-heading {
-        margin-bottom: 45px;
-    }
-
-     form input{
-        width: 100%;
-    }
-    .hero-grid{
-        width: 90%;
-       position: static;
-        grid-template-columns: repeat(2,1fr);
-        margin: auto ;
-    }
-    
-}
-
-@media (max-width:767px){
-   
-   .hero{
-    background: url("https://templatemo.com/templates/templatemo_589_lugx_gaming/assets/images/banner-bg.jpg");
+        height: 6rem;
+        z-index: 1000;
+       
+   }
+   .container{
     width: 100%;
-}
+    overflow: hidden;
+  }
+   .logo{
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    margin-left: -200px;
+  }
 
-    .hero .container{
-        display: flex;
-        flex-direction: column;
-      
-        gap: 10vh;
-        width: 95%;
-        text-align: center;
-    }
-     .align-one .hero-heading ,form {
-        width: 500px;
-        text-align: center;
-    }
-    
-    .hero-heading , .align-two{
-        width: 100%;
-    }
-    .logo  {
-        max-width: 110px;
-    }
+  
+   .menu {
+       display: flex;
+       flex-direction: column;
+   }
    
+   .hamburger {
+       display: block;
+       position: absolute;
+       right: 10%;
+       top: 30%;
+       font-size: 2.5em;
+       z-index: 10;
+       color: #fff;
+   }
+   .nav-links {
+     margin-top: -10px;
+        width: 90%;
+       flex-direction: column;
+       gap: 0;
+       align-items: center;
+       position: fixed;
+       left: 20px;
+       background-color: #f2f2f2;
+       height: 300px;
+       z-index: 1001;
+       transform: translateY(0%);
+       transition: transform 0.5s;
+       border-bottom-left-radius: 50px;
+       border-bottom-right-radius: 50px;
+
+   }
+   .nav-links[data-visible="false"] {
+       transform: translateY(-200%);
+   }
+   .hamburger i[data-visible="true"] {
+       display: block;
+   }
+   .hamburger i[data-visible="false"] {
+       display: none;
+   }
+   .nav-links li {
+       width: 100%;
+        text-align: center;
+       padding-block: 1rem;
+   }
+   .nav-links a {
+       text-align: center;
+       color: #1e1e1e;
+   }
+   .main-btn{
+    background-color:transparent;
+     }
+     .nav-links a:hover{
+        color: #ee626b;
+    }
+    .hero{
+        width: 100%;
+        height: 1100px;
+    }
+   .hero .container{
+    width: 100%;
+     flex-direction: column;
+     gap: 1rem;
+}
+.hero .container .align-one{
+    width:90%;
+    justify-content: center;
+    gap: 1rem;
+
  
-    h1,img{
-        width: 100%;
-        height: auto;
-    }
-
-    .hero .hero-heading {
-        margin-bottom: 45px;
-    }
-
+}
+ 
+ 
+.hero .container .hero-heading{
+    width: 100%;
+     justify-content: center;
+}
+form{
+     
+    width: 80%;
+}
+.hero .align-two{
+    width: 90%;
+    height: 100%;
     
-    input{
-        width: 100%;
-    }
-    .hero-grid{
-        grid-template-columns: repeat(1,1fr);
-    }
+ }
+.hero-grid{
+    width: 100%;
+   flex-direction: column;
+   align-items: center;
+  }
+.hero-grid .item{
+    width: 90%;
+    
+
+}
 
 }
