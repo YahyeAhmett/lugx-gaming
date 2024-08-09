@@ -10,17 +10,19 @@ body{
 
 /* Header*/
 
-.header .container{
+.header .container {
     width: 100%;
     background: transparent;
     display: flex;
     justify-content: space-between;
     align-items: center;
-   /* position: absolute;*/
-    right: 20px;
+    position: absolute;
     margin-left: 20px;
     margin-top: 20px;
     
+}
+.container .logo{
+    margin-left: 30px;
 }
 nav ul{
     display: flex;
@@ -39,33 +41,37 @@ nav ul{
     position: fixed;
     top: 0;
     right: 0;
-    height: auto;
-    width: 250px;
+    height: 50vh;
+    width: 500px;
     z-index: 999;
-    background-color: rgb(151, 149, 149);
-    backdrop-filter: blur(10px);
-    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
+    margin: 0 40px;
+    margin-top: 20px;
 }
 .sidebar li{
-    background-color: rgb(45, 45, 45);
-    border-bottom: 1px solid white;
+    background-color:white;
+    border-bottom: 1px solid rgb(34, 34, 34);
     width: 100%;
     list-style-type: none;
     text-align: center;
-    padding-top:5px ;
+    padding: 20px 0 ;
+
 }
 .sidebar li a{
     width: 100%;
-    color: white;
-    font-size: 12px;
+    color: black;
+    font-size: 14px;
+    font-weight: 600;
+}
+.sidebar li a:hover{
+    color: #ee626b;
 }
 .sidebar li .active{
-    color: rgb(244, 53, 53);
+    color: #ee626b;
     background: none;
     font-weight: 600;
     text-transform: uppercase;
@@ -77,38 +83,189 @@ nav ul{
 .menu-button{
     display: none;
 }
+/* header end*/
 
+/*HERO*/
+
+
+.hero{ 
+    background: url("https://templatemo.com/templates/templatemo_589_lugx_gaming/assets/images/banner-bg.jpg");
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 225px 0px;
+    padding-left: 20px;
+    border-radius: 0px 0px 150px 150px; 
+    
+}
+.hero .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.hero .container .align-one{
+    width:40%;
+}
+.hero .container .small{
+    margin-bottom:10px ;
+    color: white;
+}
+.hero .container .hero-heading .hero-heading-tittle{
+    margin-bottom: 20px;
+    font-size:48px;
+    color: white;
+    position: relative;
+}
+.hero .container h1::after{
+    position: absolute;
+    background-image: url(https://templatemo.com/templates/templatemo_589_lugx_gaming/assets/images/caption-dec.png);
+    width: 202px;
+    height: 12px;
+    content: '';
+    left: 125px;
+    bottom: 0;
+}
+.hero .hero-heading p{
+    font-size: 14px;
+    margin-bottom: 40px;
+    color: white;
+}
+form{
+    margin-top: 20vh;
+    position: relative;
+    width: 70%;
+}
+form input{
+           min-width: 380px;
+           font-size: 14px;
+           height: 50px;
+           border-radius: 25px;
+           border: none;
+           width: 100%;
+           outline: none;
+           padding: 0 25px;
+}
+form .btn-prime{
+    display: inline-block;
+    height: 50px;
+    line-height: 50px;
+    background-color: rgb(238, 98, 107);
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding: 0px 25px;
+    border: none;
+    border-radius: 25px;
+    position: absolute;
+    right: -50px;
+    top: 0px;
+    transition: all 0.3s ease 0s;
+}
+.hero .align-two{
+    position: relative;
+}
+.hero .align-two img{
+    border-radius: 20px;
+}
+.hero .align-two .price{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color:rgb(0, 138, 248);
+    color: white;
+    font-weight: 600;
+    padding: 5px ;
+    border-radius: 15px;
+}
+.hero .align-two .discont{
+    position: absolute;
+    left: -25px;
+    bottom: -25px;
+    background-color: rgb(238, 98, 107);
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 15px 0;
+    border-radius: 50%;
+}
 a{
     text-decoration: none;
-    /*color: white;*/
+    color: white;
    /* font-weight: 600;*/
     cursor: pointer;
+    border: transparent;
+    letter-spacing: 0.25px
 }
 a:hover{
-    color: red;
-}
-ul li .active{
-    background-color: #dcdcdc;
+    background-color: rgba(255, 255, 255, 0.10);
     border-radius: 15px;
-    padding: 5px 10px;
+    padding: 10px 10px;
+}
+ul li a.active{
+    background-color: rgba(255, 255, 255, 0.10);
+    border-radius: 15px;
+    padding: 10px 10px;
 }
 /* Button*/
 .btn{
-    background-color: red;
+    background-color: #ee626b;
     color: white;
     font-weight: 600;
-    padding: 5px 10px;
-    border-radius: 15px;
+    padding: 10px 15px;
+    border-radius: 20px;
     border: none;
 }
 .btn:hover{
     color: white;
 }
+/* hero-grid*/
 
+.hero-grid{
+   display: grid;
+   grid-template-columns: repeat(4,250px);
+   gap: 2vh;
+   position: absolute;
+   bottom: -50vh;
+   margin-left: 20vh;
+}
+.hero-grid .item{
+    background-color: white;
+    border-radius: 25px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    height: 200px;
+    margin-bottom: 10px;
+
+}
+.hero-grid .image{
+    background-color:rgb(0, 138, 248) ;
+    width: 100px;
+    padding: 20px;
+    border-radius: 50%;
+    text-align: center;
+    margin: auto;
+    margin-top: 30px;
+}
+.hero-grid img{
+    width: 50px;
+    height: auto;
+}
+.hero-grid h4{
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+.hero-grid .image:hover{
+    background-color: #ee626b;
+}
 
 
 /* RESPONSIVE DESIGN*/
-@media (max-width:800px){
+
+
+
+@media (max-width:992px){
     .hideonMobile{
         display: none;
 
@@ -116,10 +273,96 @@ ul li .active{
     .menu-button{
         display: block;
     }
-}
-@media (max-width:400px){
-    .sidebar{
+    .header{
         width: 100%;
+    }
+    .hero .container{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20vh;
+        width: 720px;
+        text-align: center;
+    }
+     .align-one .hero-heading ,form {
+        width: 680px;
+        text-align: center;
+    }
+    
+    .hero-heading , .align-two{
+        width: 100%;
+    }
+    .logo  {
+        max-width: 110px;
+    }
+    h1{
+        font-size: 30px;
+    }
+ 
+    h1,img{
+        width: 100%;
+        height: auto;
+    }
+
+    .hero .hero-heading {
+        margin-bottom: 45px;
+    }
+
+     form input{
+        width: 100%;
+    }
+    .hero-grid{
+        width: 90%;
+       position: static;
+        grid-template-columns: repeat(2,1fr);
+        margin: auto ;
+    }
+    
+}
+
+@media (max-width:767px){
+   
+   .hero{
+    background: url("https://templatemo.com/templates/templatemo_589_lugx_gaming/assets/images/banner-bg.jpg");
+    width: 100%;
+}
+
+    .hero .container{
+        display: flex;
+        flex-direction: column;
+      
+        gap: 10vh;
+        width: 95%;
+        text-align: center;
+    }
+     .align-one .hero-heading ,form {
+        width: 500px;
+        text-align: center;
+    }
+    
+    .hero-heading , .align-two{
+        width: 100%;
+    }
+    .logo  {
+        max-width: 110px;
+    }
+   
+ 
+    h1,img{
+        width: 100%;
+        height: auto;
+    }
+
+    .hero .hero-heading {
+        margin-bottom: 45px;
+    }
+
+    
+    input{
+        width: 100%;
+    }
+    .hero-grid{
+        grid-template-columns: repeat(1,1fr);
     }
 
 }
