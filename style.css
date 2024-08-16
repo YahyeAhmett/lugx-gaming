@@ -362,7 +362,7 @@ form .btn-prime {
 .blogs .blog {
   width: 100%;
   display: flex;
-  gap: 1rem;
+  gap: 2rem;
 }
 .blog .blog-item {
   width: 165px;
@@ -409,6 +409,181 @@ form .btn-prime {
   background-color: #007cf8;
   color: #fff;
 }
+
+/*start about section*/
+.cate {
+  color: #ee626b;
+  font-family: "poppins", sans-serif;
+  font-weight: bolder;
+  text-align: center;
+  margin-top: 100px;
+}
+.top {
+  font-family: "poppins", sans-serif;
+  font-weight: bold;
+  font-size: 40px;
+  text-align: center;
+}
+.categories img {
+  width: 200px;
+  height: 200px;
+  border-radius: 15px;
+  margin-top: 15px;
+}
+ .categories {
+  background-color: #0071f8;
+  height: 150px;
+  width: 200px;
+  border-radius: 20px;
+  margin-top: 40px;
+}
+
+.about .container .categories .actions {
+  color: white;
+  font-family: "poppins", sans-serif;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.about .container {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  text-align: center;
+}
+/*end about section*/
+/*start Testimonials*/
+/*
+.testimonials {
+  margin-top: 160px;
+  text-align: center;
+}
+
+.testimonials .cta-bg {
+  border-radius: 25px;
+  overflow: hidden;
+  position: relative;
+  z-index: -1;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -80%;
+}
+
+.testimonials .cta-bg img {
+  border-radius: 25px;
+}
+
+.testimonials .content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  text-align: left;
+  width: 100%;
+}
+.testimonials .content .left-side {
+  background-color: #f7f7f7;
+  padding: 100px 80px;
+  border-radius: 25px;
+  margin-left: 40px;
+}
+.testimonials .content .left-side > span,
+.testimonials .content .right-side > span {
+  color: #ee626b;
+  font-weight: 600;
+}
+.testimonials .content .left-side .text {
+  font-size: 28px;
+  font-weight: 500;
+  margin-top: 15px;
+  line-height: 1.3;
+  max-width: 300px;
+}
+.testimonials .content .left-side .text span,
+.testimonials .content .right-side .text span {
+  font-style: normal;
+  color: #0071f8;
+}
+.testimonials .content .left-side p {
+  color: gray;
+  margin-bottom: 40px;
+  max-width: 300px;
+  font-size: 15px;
+  font-weight: 600;
+}
+.testimonials .content .left-side a {
+  color: white;
+  display: inline-block;
+  background-color: #ee626b;
+  font-size: 20px;
+  font-weight: 600;
+  height: 50px;
+  line-height: 50px;
+  padding: 0px 30px;
+  border-radius: 25px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.testimonials .content .left-side a:hover {
+  background-color: #0071f8;
+}
+.testimonials .content .right-side {
+  background-color: #f7f7f7;
+  padding: 80px 60px;
+  border-radius: 25px;
+  margin-right: 25px;
+}
+.testimonials .content .right-side .text {
+  font-size: 26px;
+  font-weight: 700;
+  margin-top: 15px;
+  line-height: 1.3;
+  max-width: 370px;
+}
+.testimonials .content .right-side form {
+  margin-top: 30px;
+  display: flex;
+  border-radius: 25px;
+  align-items: center;
+  background-color: white;
+}
+.testimonials .content .right-side form input {
+  border: none;
+  border-radius: 25px;
+}
+
+.testimonials .content .right-side form .btn-prime :hover {
+  background-color: #0071f8;
+}
+  */
+
+/*end testimonials*/
+
+/* footer*/
+footer{
+    margin-top: 150px;
+    background-color: #0071f8;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(https://templatemo.com/templates/templatemo_589_lugx_gaming/assets/images/footer-bg.jpg);
+    min-height: 150px;
+    border-radius: 150px 150px 0px 0px;
+}
+
+footer p{
+    text-align: center;
+    line-height: 90px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+
+}
+footer a{
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+}
+
 /* RESPONSIVE DESIGN*/
 
 /* Smatphones and TAblets */
@@ -576,147 +751,36 @@ form .btn-prime {
   .blog .blog-info {
     width: 100%;
   }
-}
-/*start about section*/
-.cate {
-  color: #ee626b;
-  font-family: "poppins", sans-serif;
-  font-weight: bolder;
+  /* about section*/
+ .about{
+  width: 100%;
+  height: 100%;
+  padding: 80px 12px;
+  justify-content: center;
   text-align: center;
-  margin-top: 100px;
+ }
+.about .container{
+  width: 90%;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align:center;
 }
-.top {
-  font-family: "poppins", sans-serif;
-  font-weight: bold;
-  font-size: 40px;
-  text-align: center;
+.about .cate , .about .top{
+  width: 100%;
+  height:auto;
+  text-align:center;
 }
-img {
-  width: 200px;
-  height: 200px;
-  border-radius: 15px;
-  margin-top: 15px;
+.about .categories{
+  width: 100%;
+  height: 100%;
 }
-.categories {
-  background-color: #0071f8;
-  height: 150px;
-  width: 200px;
-  border-radius: 20px;
-  margin-top: 40px;
+.about img{
+  width: 100%;
+  height: 100%;
 }
-
-.actions {
-  color: white;
-  font-family: "poppins", sans-serif;
-  text-align: center;
-  margin-top: 20px;
-}
-.container {
-  display: flex;
-  gap: 30px;
-  margin-left: 50px;
-}
-/*end about section*/
-/*start Testimonials*/
-.testimonials {
-  margin-top: 160px;
-  text-align: center;
-}
-
-.testimonials .cta-bg {
-  border-radius: 25px;
-  overflow: hidden;
-  position: relative;
-  z-index: -1;
-  left: 50%;
-  transform: translateX(-50%);
-  top: -80%;
-}
-
-.testimonials .cta-bg img {
-  border-radius: 25px;
-}
-
-.testimonials .content {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  text-align: left;
+/* footer*/
+footer , footer .container{
   width: 100%;
 }
-.testimonials .content .left-side {
-  background-color: #f7f7f7;
-  padding: 100px 80px;
-  border-radius: 25px;
-  margin-left: 40px;
-}
-.testimonials .content .left-side > span,
-.testimonials .content .right-side > span {
-  color: #ee626b;
-  font-weight: 600;
-}
-.testimonials .content .left-side .text {
-  font-size: 28px;
-  font-weight: 500;
-  margin-top: 15px;
-  line-height: 1.3;
-  max-width: 300px;
-}
-.testimonials .content .left-side .text span,
-.testimonials .content .right-side .text span {
-  font-style: normal;
-  color: #0071f8;
-}
-.testimonials .content .left-side p {
-  color: gray;
-  margin-bottom: 40px;
-  max-width: 300px;
-  font-size: 15px;
-  font-weight: 600;
-}
-.testimonials .content .left-side a {
-  color: white;
-  display: inline-block;
-  background-color: #ee626b;
-  font-size: 20px;
-  font-weight: 600;
-  height: 50px;
-  line-height: 50px;
-  padding: 0px 30px;
-  border-radius: 25px;
-  text-decoration: none;
-  transition: 0.3s;
 }
 
-.testimonials .content .left-side a:hover {
-  background-color: #0071f8;
-}
-.testimonials .content .right-side {
-  background-color: #f7f7f7;
-  padding: 80px 60px;
-  border-radius: 25px;
-  margin-right: 25px;
-}
-.testimonials .content .right-side .text {
-  font-size: 26px;
-  font-weight: 700;
-  margin-top: 15px;
-  line-height: 1.3;
-  max-width: 370px;
-}
-.testimonials .content .right-side form {
-  margin-top: 30px;
-  display: flex;
-  border-radius: 25px;
-  align-items: center;
-  background-color: white;
-}
-.testimonials .content .right-side form input {
-  border: none;
-  border-radius: 25px;
-}
-
-.testimonials .content .right-side form .btn-prime :hover {
-  background-color: #0071f8;
-}
-/*end testimonials*/
