@@ -559,6 +559,30 @@ form .btn-prime {
 
 /*end testimonials*/
 
+/* footer*/
+footer{
+    margin-top: 150px;
+    background-color: #0071f8;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(https://templatemo.com/templates/templatemo_589_lugx_gaming/assets/images/footer-bg.jpg);
+    min-height: 150px;
+    border-radius: 150px 150px 0px 0px;
+}
+
+footer p{
+    text-align: center;
+    line-height: 90px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+
+}
+footer a{
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+}
 
 /* RESPONSIVE DESIGN*/
 
@@ -753,6 +777,10 @@ form .btn-prime {
 .about img{
   width: 100%;
   height: 100%;
+}
+/* footer*/
+footer , footer .container{
+  width: 100%;
 }
 }
 
